@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.survey.Main5Activity">
+
+    <TextView
+        android:id="@+id/tV9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10.您对自己所居住的社区的公共服务配套设施情况的看法："
+        android:layout_below="@id/rG8"
+        android:textSize="50px"
+        />
+
+    <RadioGroup
+        android:id="@+id/rG9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tV9"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RadioButton
+            android:text="A.很满意"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rG9_B0" />
+
+        <RadioButton
+            android:text="B.基本满意"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rG9_B1" />
+
+        <RadioButton
+            android:text="C.一般"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rG9_B2" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tV10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="11.如果您居住周边的中小学操场能免费对外开放，您会经常使用吗"
+        android:layout_below="@id/rG9"
+        android:textSize="50px"
+        />
+
+    <RadioGroup
+        android:id="@+id/rG10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tV10"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RadioButton
+            android:text="A经常使用"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rG10_B0" />
+
+        <RadioButton
+            android:text="B不经常使用"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rG10_B1" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tV11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10.您所在社区有哪些公共体育设施（多选题）"
+        android:layout_below="@id/rG10"
+        android:textSize="50px"
+        />
+
+
+    <CheckBox
+        android:text="A篮球场"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tV11"
+        android:id="@+id/cB0" />
+
+    <CheckBox
+        android:text="B乒乓球台"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cB0"
+        android:id="@+id/cB1" />
+
+    <CheckBox
+        android:text="C游泳池"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cB1"
+        android:id="@+id/cB2" />
+
+
+    <EditText
+        android:id ="@+id/eT0"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入您的电话方便我们联系您"
+        android:layout_above="@+id/btn1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="完成"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp" />
+
+</RelativeLayout>
